@@ -1,0 +1,182 @@
+<!doctype html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<title>Team Mortensen Period 5</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	body {
+		font-family: "Lato", sans-serif
+	}
+
+	.mySlides {
+		display: none
+	}
+</style>
+
+<body>
+	<!-- Navbar -->
+<!--	<div class="w3-top"> -->
+		<div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()"
+			 title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#Home" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    
+     <a href="https://padlet.com/aidenc08233/dqj1d38uz1mb5zxd"  target="_blank"
+     class="w3-bar-item w3-button w3-padding-large w3-hide-small">Zach and Aiden's Journal</a>
+
+     <a href="https://padlet.com/adhithinmurthy07/584ciidctynvocts"  target="_blank" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Project 1 Complex Calculator Padlet</a>
+
+     <a href="https://padlet.com/dayitar55247/tz0mxud5i694r1f2"  target="_blank"
+     class="w3-bar-item w3-button w3-padding-large w3-hide-small">Project 2 Pokemon Padlet</a>
+     
+     <a href="https://padlet.com/dayitar55247/tz0mxud5i694r1f2"  target="_blank"
+     class="w3-bar-item w3-button w3-padding-large w3-hide-small">Project 2 Pokemon Padlet 2</a>
+    
+   
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+<!--  </div>  -->
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#Team Project Padlet" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Team Project Padlet</a>
+  <a href="#Journals" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"
+  > Journals</a>
+  <a href="#contacts" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contacts</a>
+</div>
+
+
+
+  <!-- The Team Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">THE MORTENSENS</h2>
+    <p class="w3-opacity"><i>Period 5</i></p>
+    <p class="w3-justify">We have created a website about our coding projects. We will use this website to document and reinforce our coding progress and creations. So far within this project, we have learned about print statments, if-else statments, loops, lists, strings, and more! </p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Complex Calculator</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Here we designed a basic calculator/graphing utility.It included animation and ASCII art as well as the computer talking." style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Pokemon Game</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Here we deisgned a Pokemon game in which the main character catches Pokemon and goes on quests in order to end up at a gym and battle for a badge. TBD" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Calendar Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Deadlines</h2>
+      <p class="w3-opacity w3-center"><i>Remember to list goals due</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left"></span></li>
+        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left"></span></li>
+        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
+      </ul>
+
+  {% block script %}
+  <script src="https://threejs.org/build/three.js"></script>
+    <script src="{{ url_for('static', filename='vanta.waves.min.js') }}"></script>
+    <script>
+    VANTA.WAVES({
+      el: "body",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00
+    })
+  </script>
+  {% endblock %}
+
+  {% block style %}
+  <style>
+      html, body {
+          margin: 0;
+          height: 100%;
+          color: white;
+      }
+
+      h1{
+          font-size: 5em;
+      }
+
+
+      .fa{
+          font-size: 3em;
+          letter-spacing: 1em;
+          transition: all .2s;
+          color: white;
+      }
+
+      .fa:hover{
+          transform: translateY(10px);
+      }
+
+      .fa-youtube-play:hover{
+          color: #cc0000;
+      }
+
+      .fa-twitter:hover{
+          color: #1da1f2;
+      }
+
+      .fa-github:hover{
+          color: #000000;
+      }
+
+
+      .btn:link,
+      .btn:visited {
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 15px 40px;
+          display: inline-block;
+          border-radius: 100px;
+          transition: all .2s;
+          position: absolute;
+          color: white;
+          font-size: 2.5em;
+      }
+
+      .btn:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 20px 40px rgba(255, 255, 255, 0.2);
+      }
+
+      .btn:active {
+          transform: translateY(-1px);
+          box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+      }
+
+      
+  </style>
+  {% endblock %}
+
+</html>
+
+
+    <div class="container-fluid">
+      <div class="row justify-content-end" style="padding-top: 2%; padding-bottom: 2%; padding: 2%;">
+        <div style="text-align: justified-content-right;">
+
+          <h2>Projects</h2>
+          <a href="https://repl.it/@AdhithiNarayana/ProjectDoc#main.py">
+            <h4>Complex Calculator</h4></a>
+          <a href="https://repl.it/@DayitaRay/Pokemon-Game#main.py">
+            <h4>Pokemon Game</h4></a>
