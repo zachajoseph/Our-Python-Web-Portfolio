@@ -1,11 +1,13 @@
 import projects  #projects definitions are placed in different file
 
+#Use of flask Here
 # https://flask.palletsprojects.com/en/1.1.x/api/
 from flask import Flask, render_template
 #create a Flask instance
 app = Flask(__name__)
 
 
+#Use of Routes here 
 #connects default URL of server to render home.html
 @app.route('/')
 def home_route():
