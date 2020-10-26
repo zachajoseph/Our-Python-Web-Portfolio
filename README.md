@@ -8,7 +8,7 @@ How to use
 
 from here, you can access the summary of our projects, as well as deadlines and links to our work. 
 
->https://our-python-web-portfolio.zachajoseph.repl.co/apcsp
+>https://our-python-web-portfolio--zachajoseph.repl.co/apcsp
 
 by clicking on the ap csp guidelines at the top bar of the page, you'll be able to access our website with all of the college board related material. this includes the guide, course summary, and outline, as well as a link to the college board page on ap computer science principles. 
 
@@ -21,7 +21,14 @@ by clicking on dnhs coding resources on the top bar of the page, you'll be taken
 the remaining links at the top bar will take you to our padlets - our idea journals with our pairs. 
 
 
-Here are the github repositories which list our cont
+
+Here are the github repositories which list our commits along with coding contribututions.
+
+Portfolio repo
+https://github.com/zachajoseph/Our-Python-Web-Portfolio/commits/master
+
+pokemon repo
+https://github.com/largecodeman1/Pokemon-Game/commits/master
 
 **Contributions**
 
