@@ -4,6 +4,10 @@ A playground for trying and breaking the code without breaking the code
 # INITIAL README
 
 How to use
+
+Here is a 1 minute video introduction to the project:
+https://youtu.be/BmnjPxgjRX8
+
 >https://our-python-web-portfolio.zachajoseph.repl.co/
 
 from here, you can access the summary of our projects, as well as deadlines and links to our work. 
@@ -30,31 +34,21 @@ https://github.com/zachajoseph/Our-Python-Web-Portfolio/commits/master
 pokemon repo
 https://github.com/largecodeman1/Pokemon-Game/commits/master
 
-**Contributions**
-
-*Adhithi*
-
-helped work on the project padlet, the readme.md, and coded the apcsp and dnhs coding resources pages by working with the templates from bootstrap. 
-
-*Dayita*
-
-*Zach* 
-
-helped code most of the main website using bootstrap, and configured fonts, styles, and pages. 
-
-*Aiden*
 
 
-**Requirements**
+**Use of 3rd party software [including open source]**
 
-[ ] Show usage of Git
-[ ] Show usage of IntelliJ
-[ ] Show usage of Flask and routes
-[ ] Show usage of  Bootstrap 
-[ ] Show usage of Jinja
-[ ] Show your project Theme
-[ ] Show each individual having a code checkin and comment
-[ ] 1 minute video encouraged, provide as a link from your Portfolio
+Our portfolio uses the following: 
+* Flask
+* Bootstrap
+* Jinja
+* GitHub
+
+We were not able to integrate intellij, however we all have it set up for use.
+
+The project Theme is outlined under the project list and within the repl, displaying the background along with other features.
+
+
 
 
 

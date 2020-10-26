@@ -22,6 +22,7 @@
 
 <body>
 	<!-- Navbar -->
+  <!-- This section contains all the nav bar links for the main portfolio page -->
 <!--	<div class="w3-top"> -->
 		<div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()"
@@ -46,7 +47,7 @@
      class="w3-bar-item w3-button w3-padding-large w3-hide-small"> John the Calculator Padlet 2</a>
     
    
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+<!--    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a> -->
 <!--  </div>  -->
 </div>
 
@@ -61,6 +62,7 @@
 
 
   <!-- The Team Section -->
+  <!-- This section contains all project descriptions -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
     <h2 class="w3-wide">THE MORTENSENS</h2>
     <p class="w3-opacity"><i>Period 5</i></p>
@@ -87,7 +89,7 @@
   <!-- The Calendar Section -->
   <div class="w3-black" id="tour">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">Deadlines</h2>
+      <h2 class="w3-wide w3-center">Coming Soon ** Deadlines **</h2>
       <p class="w3-opacity w3-center"><i>Remember to list goals due</i></p><br>
 
       <ul class="w3-ul w3-border w3-white w3-text-grey">
@@ -96,6 +98,7 @@
         <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
       </ul>
 
+<!-- This is the background animation using the vanta.js -->
   {% block script %}
   <script src="https://threejs.org/build/three.js"></script>
     <script src="{{ url_for('static', filename='vanta.waves.min.js') }}"></script>
@@ -187,5 +190,5 @@
           <h2>Projects</h2>
           <a href="https://repl.it/@AdhithiNarayana/ProjectDoc#main.py">
             <h4>Complex Calculator</h4></a>
-          <a href="https://repl.it/@DayitaRay/Pokemon-Game#main.py">
+          <a href="https://repl.it/@zachajoseph/Pokemon-Game#main.py">
             <h4>Pokemon Game</h4></a>
