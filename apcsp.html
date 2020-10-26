@@ -1,0 +1,170 @@
+<html>
+
+    <head>
+      <title>the mortensons </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+
+            <div class="row justify-content-end" style="padding-top: 2%; padding-bottom: 2%; padding: 2%;">
+
+                <div class="col-4" style="text-align: right;">
+
+                    <h5>the mortensons</h5>
+
+                </div>
+
+            </div>
+
+
+            <!--
+            <div class="row justify-content-center">
+
+                <h1>Portfolio</h1>
+
+            </div>
+            -->
+
+            <div class="product" style="margin-top: 2%;">
+              <div class="row" style="padding: 10%; padding-top: 0%; padding-bottom: 5%;">
+
+                  <div class="col-8" >
+                      <h1>college board information </h1>
+                  </div>
+
+              </div>
+
+              <div class="row" style="padding-left: 10%;">
+                  <div class="col-4">
+                      <a href="https://apcentral.collegeboard.org/pdf/ap-computer-science-principles-course-a-glance.pdf?course=ap-computer-science-principles" class="btn">course at a glance</a>
+                  </div>
+
+                  <div class="col-4">
+                      <a href="https://apcentral.collegeboard.org/pdf/ap-computer-science-principles-course-and-exam-description.pdf?course=ap-computer-science-principles" class="btn">course and exam description</a>
+                  </div>
+
+                  <div class="col-4">
+                      <a href="https://apcentral.collegeboard.org/courses/ap-computer-science-principles/course" class="btn">course page</a>
+                  </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="product" style="margin-top: 5%;">
+              <div class="row" style="padding: 10%; padding-top: 5%; padding-bottom: 5%;">
+
+                  <div class="col-8" >
+                      <h1>adaption of collegeboard criteria</h1>
+                  </div>
+
+              </div>
+
+              <div class="row" style="padding-left: 10%;">
+                  <div class="col-4">
+                      <a href="#" class="btn">project 1 reflection</a>
+                  </div>
+
+                  <div class="col-4">
+                      <a href="https://repl.it/@jmort1021/Python-Web-Portfolio-Series#main.py" class="btn">project 2 reflection</a>
+                  </div>
+
+                  <div class="col-4">
+                      <a href="#" class="btn">project 3 reflection</a>
+                  </div>
+
+              </div>
+
+            </div>
+
+
+        </div>
+
+    </body>
+
+    <script src="https://threejs.org/build/three.js"></script>
+    <script src="{{ url_for('static', filename='vanta.waves.min.js') }}"></script>
+    --><script>
+
+    VANTA.WAVES({
+      el: "body",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      wingSpan: 40.0
+    })
+    </script>
+
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            color: black;
+        }
+
+        h1{
+            font-size: 5em;
+        }
+
+
+        .fa{
+            font-size: 3em;
+            letter-spacing: 1em;
+            transition: all .2s;
+            color: black;
+        }
+
+        .fa:hover{
+            transform: translateY(10px);
+        }
+
+        .fa-youtube-play:hover{
+            color: #cc0000;
+        }
+
+        .fa-twitter:hover{
+            color: #1da1f2;
+        }
+
+        .fa-github:hover{
+            color: #000000;
+        }
+
+
+        .btn:link,
+        .btn:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 15px 40px;
+            display: inline-block;
+            border-radius: 100px;
+            transition: all .2s;
+            position: absolute;
+            color: black;
+            font-size: 2em;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+        }
+
+
+    </style>
+
+</html>
