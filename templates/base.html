@@ -22,26 +22,29 @@
 
 <body>
 	<!-- Navbar -->
-<!--	<div class="w3-top"> -->
+  <!-- This section contains all the nav bar links for the main portfolio page -->
 		<div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()"
 			 title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         <a href="#Home" class="w3-bar-item w3-button w3-padding-large">Home</a>
     
+       <a href="apcsp"  target="_blank"
+     class="w3-bar-item w3-button w3-padding-large w3-hide-small">AP CSP Guidlines</a>
+
+       <a href="http://nighthawkcoders.cf/courses/python"  target="_blank"
+     class="w3-bar-item w3-button w3-padding-large w3-hide-small">DNHS Coding Resources</a>
+    
      <a href="https://padlet.com/aidenc08233/dqj1d38uz1mb5zxd"  target="_blank"
      class="w3-bar-item w3-button w3-padding-large w3-hide-small">Zach and Aiden's Journal</a>
 
-     <a href="https://padlet.com/adhithinmurthy07/584ciidctynvocts"  target="_blank" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Project 1 Complex Calculator Padlet</a>
+     <a href="https://padlet.com/adhithinmurthy07/584ciidctynvocts"  target="_blank" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Adhithi and Dayita's Padlet</a>
 
      <a href="https://padlet.com/dayitar55247/tz0mxud5i694r1f2"  target="_blank"
-     class="w3-bar-item w3-button w3-padding-large w3-hide-small">Project 2 Pokemon Padlet</a>
+     class="w3-bar-item w3-button w3-padding-large w3-hide-small"> Pokemon Padlet</a>
      
-     <a href="https://padlet.com/dayitar55247/tz0mxud5i694r1f2"  target="_blank"
-     class="w3-bar-item w3-button w3-padding-large w3-hide-small">Project 2 Pokemon Padlet 2</a>
-    
-   
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-<!--  </div>  -->
+     <a href="https://padlet.com/adhithinmurthy07/584ciidctynvocts"  target="_blank"
+     class="w3-bar-item w3-button w3-padding-large w3-hide-small"> John the Calculator Padlet 2</a>
+
 </div>
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
@@ -55,6 +58,7 @@
 
 
   <!-- The Team Section -->
+  <!-- This section contains all project descriptions -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
     <h2 class="w3-wide">THE MORTENSENS</h2>
     <p class="w3-opacity"><i>Period 5</i></p>
@@ -62,23 +66,27 @@
     <div class="w3-row w3-padding-32">
       <div class="w3-third">
         <p>Complex Calculator</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Here we designed a basic calculator/graphing utility.It included animation and ASCII art as well as the computer talking." style="width:60%">
+        <img src="https://c1.neweggimages.com/ProductImage/44-101-109-10.jpg" class="w3-round w3-margin-bottom" style="width:60%">
+        <p>Here we designed a basic calculator/graphing utility.It included animation and ASCII art as well as the computer talking.<p>
       </div>
       <div class="w3-third">
         <p>Pokemon Game</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Here we deisgned a Pokemon game in which the main character catches Pokemon and goes on quests in order to end up at a gym and battle for a badge. TBD" style="width:60%">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" class="w3-round w3-margin-bottom"    
+        style="width:60%">
+        <p>Here we deisgned a Pokemon game in which the main character catches Pokemon and goes on quests in order to end up at a gym and battle for a badge. TBD<p>
       </div>
       <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+        <p>Next Project</p>
+        <img src="https://fwtx.com/downloads/22719/download/coming-soon.png?cb=ef8dbfa3204e40cc01f6514a1781bb25" class="w3-round" alt=" Next Project" style="width:60%">
       </div>
     </div>
   </div>
 
   <!-- The Calendar Section -->
-  <div class="w3-black" id="tour">
+  <!-- Coming soon with features, not currently opperational -->
+  <div class="w3-black" id="Calendar">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">Deadlines</h2>
+      <h2 class="w3-wide w3-center">Coming Soon ** Deadlines **</h2>
       <p class="w3-opacity w3-center"><i>Remember to list goals due</i></p><br>
 
       <ul class="w3-ul w3-border w3-white w3-text-grey">
@@ -87,6 +95,7 @@
         <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
       </ul>
 
+<!-- This is the background animation using the vanta.js -->
   {% block script %}
   <script src="https://threejs.org/build/three.js"></script>
     <script src="{{ url_for('static', filename='vanta.waves.min.js') }}"></script>
@@ -169,7 +178,7 @@
   {% endblock %}
 
 </html>
-
+<!-- List of repl links are cited here -->
 
     <div class="container-fluid">
       <div class="row justify-content-end" style="padding-top: 2%; padding-bottom: 2%; padding: 2%;">
@@ -178,5 +187,5 @@
           <h2>Projects</h2>
           <a href="https://repl.it/@AdhithiNarayana/ProjectDoc#main.py">
             <h4>Complex Calculator</h4></a>
-          <a href="https://repl.it/@DayitaRay/Pokemon-Game#main.py">
+          <a href="https://repl.it/@zachajoseph/Pokemon-Game#main.py">
             <h4>Pokemon Game</h4></a>
