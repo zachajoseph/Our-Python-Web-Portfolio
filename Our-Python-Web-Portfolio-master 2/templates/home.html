@@ -1,0 +1,21 @@
+<!-- Use of Jinja here -->
+{% extends "base.html" %}
+
+{% block head %}
+  <title>{{name}}| Home </title>
+{% endblock %}
+<!-- Javascript Background uploaded -->
+  {% block script %}
+  <script src="https://threejs.org/build/three.js"></script>
+    <script src="{{ url_for('static', filename='vanta.waves.min.js') }}"></script>
+    <script>
+    VANTA.WAVES({
+      el: 'body',
+      color: 0x111111,
+      waveHeight: 20,
+      shininess: 50,
+      waveSpeed: 1.5,
+      zoom: 0.75
+    })
+  </script>
+  {% endblock %}
