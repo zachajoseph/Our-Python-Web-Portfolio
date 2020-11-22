@@ -1,0 +1,222 @@
+<!doctype html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<title>Team Mortensen Period 5</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	body {
+		font-family: "Lato", sans-serif
+	}
+
+	.mySlides {
+		display: none
+	}
+</style>
+
+<body>
+	<!-- Navbar -->
+  <!-- This section contains all the nav bar links for the main portfolio page -->
+		<div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()"
+			 title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#Home" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    
+       <a href="apcsp"  target="_blank"
+     class="w3-bar-item w3-button w3-padding-large w3-hide-small">AP CSP Guidlines</a>
+
+       <a href="http://nighthawkcoders.cf/courses/python"  target="_blank"
+     class="w3-bar-item w3-button w3-padding-large w3-hide-small">DNHS Coding Resources</a>
+
+     <a href="https://our-python-web-portfolio.zachajoseph.repl.co/pairshare"  target="_blank" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Pair Share</a>
+
+     
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#Team Project Padlet" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Team Project Padlet</a>
+  <a href="#Journals" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"
+  > Journals</a>
+  <a href="#contacts" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contacts</a>
+</div>
+
+
+
+  <!-- The Team Section -->
+  <!-- This section contains all project descriptions -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">THE MORTENSENS</h2>
+    <p class="w3-opacity"><i>Period 5</i></p>
+    <p class="w3-justify">We have created a website about our coding projects. We will use this website to document and reinforce our coding progress and creations. So far within this project, we have learned about print statments, if-else statments, loops, lists, strings, and more! </p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Complex Calculator</p>
+        <img src="https://c1.neweggimages.com/ProductImage/44-101-109-10.jpg" class="w3-round w3-margin-bottom" style="width:60%">
+        <p>Here we designed a basic calculator/graphing utility.It included animation and ASCII art as well as the computer talking.<p>
+      </div>
+      <div class="w3-third">
+        <p>Pokemon Game</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" class="w3-round w3-margin-bottom"    
+        style="width:60%">
+        <p>Here we deisgned a Pokemon game in which the main character catches Pokemon and goes on quests in order to end up at a gym and battle for a badge. TBD<p>
+      </div>
+      <div class="w3-third">
+        <p>Next Project</p>
+        <img src="https://fwtx.com/downloads/22719/download/coming-soon.png?cb=ef8dbfa3204e40cc01f6514a1781bb25" class="w3-round" alt=" Next Project" style="width:60%">
+      </div>
+
+			
+    </div>
+  </div>
+
+  <!-- The Calendar Section -->
+  <!-- Coming soon with features, not currently opperational -->
+  <div class="w3-black" id="Calendar">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Our Goals</h2>
+      <p class="w3-opacity w3-center"><i>Weeks</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">Week 0: Set up web portfolio; connect team links such as Padlets and old project.  <span class="w3-tag w3-red w3-margin-left"></span></li>
+        <li class="w3-padding">Week 1: Start Pokemon game with Flask template, set up links for starter Pokemon. <span 
+        class="w3-tag w3-red w3-margin-left"></span></li>
+        <li class="w3-padding">Week 2: Get Pokedex done, storyboard the game, finish Skeleton of the Pokemom game. <span 
+        class="w3-tag w3-red w3-margin-left"></span></li>
+        <li class="w3-padding">Week 3: Get Jinja working for Pokemon game, start Pokedex, and finish Pokemon Game Engine. <span class="w3-tag w3-red w3-margin-left"></span></li>
+        <li class="w3-padding">Week 4: Finish Pokemon game for good, close up website, turn everything in. <span class="w3-tag w3-red w3-margin-left"></span></li>
+        <li class="w3-padding">Week 5: <span 
+      </ul>
+
+
+
+<!-- This is the background animation using the vanta.js -->
+  {% block script %}
+  <script src="https://threejs.org/build/three.js"></script>
+    <script src="{{ url_for('static', filename='vanta.waves.min.js') }}"></script>
+    <script>
+    VANTA.WAVES({
+      el: "body",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00
+    })
+  </script>
+  {% endblock %}
+
+  {% block style %}
+  <style>
+      html, body {
+          margin: 0;
+          height: 100%;
+          color: white;
+      }
+
+      h1{
+          font-size: 5em;
+      }
+
+
+      .fa{
+          font-size: 3em;
+          letter-spacing: 1em;
+          transition: all .2s;
+          color: white;
+      }
+
+      .fa:hover{
+          transform: translateY(10px);
+      }
+
+      .fa-youtube-play:hover{
+          color: #cc0000;
+      }
+
+      .fa-twitter:hover{
+          color: #1da1f2;
+      }
+
+      .fa-github:hover{
+          color: #000000;
+      }
+
+
+      .btn:link,
+      .btn:visited {
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 15px 40px;
+          display: inline-block;
+          border-radius: 100px;
+          transition: all .2s;
+          position: absolute;
+          color: white;
+          font-size: 2.5em;
+      }
+
+      .btn:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 20px 40px rgba(255, 255, 255, 0.2);
+      }
+
+      .btn:active {
+          transform: translateY(-1px);
+          box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+      }
+
+      
+  </style>
+  {% endblock %}
+
+</html>
+
+
+<!-- List of repl links are cited here -->
+
+    <div class="container-fluid">
+      <div class="row justify-content-end" style="padding-top: 2%; padding-bottom: 2%; padding: 2%;">
+        <div style="text-align: justified-content-right;">
+
+          <h2>Projects</h2>
+          <a href="https://repl.it/@AdhithiNarayana/ProjectDoc#main.py">
+            <h4>Complex Calculator</h4></a>
+          <a href="https://repl.it/@zachajoseph/Pokemon-Game#main.py">
+            <h4>Pokemon Game</h4></a>
+          <a href="https://repl.it/@zachajoseph/PokemanGameEngine">
+            <h4>Pokemon Game engine</h4></a>
+    <div class="container-fluid">
+      <div class="row justify-content-end" style="padding-top: 2%; padding-bottom: 2%; padding: 2%;">
+        <div style="text-align: justified-content-right;">
+
+          <h2>Git Repos</h2>
+          <a href="https://github.com/zachajoseph/Our-Python-Web-Portfolio">
+            <h4>Portfolio repo</h4></a>
+          <a href="https://github.com/largecodeman1/Pokemon-Game">
+            <h4>Pokemon Game repo</h4></a>
+						
+          <div class="container-fluid">
+      <div class="row justify-content-end" style="padding-top: 2%; padding-bottom: 2%; padding: 2%;">
+        <div style="text-align: justified-content-right;">
+
+          <h2>Team Goals and Artifacts</h2>
+          <a href="https://github.com/zachajoseph/Pokemon-Core-Game-engine">
+          <h4> Zach Joseph - Pokemon core game engine -</h4></a>
+					<a href="https://github.com/largecodeman1/Pokemon-Game">
+					<h4>Adhithi Narayana Murthy - Listed under Contributions in readme -</h4>
+
+          <a href="https://github.com/largecodeman1/Pokemon-Game/blob/master/README.md">
+          <h4> Aiden Cizek - Listed under Contributions in readme </h4></a>
+
+          <a href="https://github.com/largecodeman1/Pokemon-Game/blob/master/README.md">
+          <h4> Dayita Ray - Listed under Contributions in readme.md -</h4></a>
+

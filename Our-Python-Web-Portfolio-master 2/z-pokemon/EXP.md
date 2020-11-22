@@ -1,0 +1,1 @@
+These are files commited from the pokemon repl in an attempt using github to link the two repls with different files. This proved unsuccessful and as such we split the repos into two different repos containing the project and the portfolio. 
